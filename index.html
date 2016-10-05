@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fuel Control v0.1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <?!= include('style.css'); ?>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="apple-touch-icon" href="https://miicky.github.io/fuel-control/img/iphone_icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="starter-template hidden-xs">
+        <h1>Fuel control for you'r car</h1>
+        <p class="lead">Use this application to know how much eat you'r car!</p>
+      </div>
+      <form id="form" accept-charset="utf-8">
+        <div class="form-group">
+          <label for="warningLights">Lit Up (засвітилась):</label>
+          <input type="tel" class="form-control" name="warningLights" placeholder="Warning Lights">
+        </div>
+        <div class="form-group">
+          <label for="race">Race (пробіг):</label>
+          <input type="tel" class="form-control" name="race" placeholder="Race km">
+        </div>
+        <div class="form-group">
+          <label for="pricePerLiter">Price per liter (ціна за літр):</label>
+          <input type="number" class="form-control" name="pricePerLiter">
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount (сума):</label>
+          <input type="number" class="form-control" name="amount">
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gasStation" value="OKKO" checked>
+            ОККО
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gasStation" value="WOG">
+            WOG
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gasStation"  value="ANP">
+            ANP
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gasStation" id="optionsRadios4" value="SHELL">
+            SHELL
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?!= include('scripts.js'); ?>
+  </body>
+</html>

@@ -1,2 +1,2 @@
-# battery
-Control of battery
+# Fuel COntrol
+Control of fuel application
